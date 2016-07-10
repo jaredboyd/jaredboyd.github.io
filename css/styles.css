@@ -1,0 +1,97 @@
+
+body { 
+	font-family: Helvetica, sans-serif; 
+	background-color: #72759c;
+	margin: 0;
+}
+
+#container {
+	margin: 0;
+}
+
+#content {
+	margin: 0;
+	text-align: center;
+	background-color: #72759c;
+	height: 100vh;
+	z-index: 1;
+}
+
+#logo {
+	margin: 0;
+	text-align: center;
+	font-weight: 100;
+	font-size: 2.8em;
+	padding-top: 2em;
+	position: relative;
+	color: white;
+}
+
+nav {
+	display: inline-block;
+	text-align: left;
+	font-size: 1.3em;
+	font-weight: 100;
+	position: relative;
+	color: white;
+	padding-top: 1em;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+    -webkit-transition: color .3s linear;   
+       -moz-transition: color .3s linear; 
+            transition: color .3s linear; 
+}
+
+nav a:hover {
+	color: #8cd0ea;
+	-webkit-transition: color .2s linear;   
+       -moz-transition: color .2s linear; 
+            transition: color .2s linear; 
+}
+
+
+/* Format fontello icons as bullet points 
+ul.icon {
+	list-style-type: none;
+}
+
+ul.icon li {
+	text-indent: -1.4em;
+	padding-bottom: 2em;
+}
+
+ul.icon li:before {
+	font-family: bullets;
+	content: "\e800";
+	float: left;
+	width: 1.4em;
+}
+
+ul.icon li.male:before { content: "\e802"; }
+  ------------------------------------------*/
+li {
+	padding-bottom: 2em;
+}
+
+
+.page {
+	color: black;
+	float: left;
+	background-color: white;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+}
+
+.pageContent {
+	padding: 30px 50px 0px 300px;
+	font-size: 1.2em;
+	background-color: white;
+}
+
+.pageContent p {
+	padding: 30px 30px 30px 50px;
+}

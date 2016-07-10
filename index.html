@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<title>Jared Boyd</title>
+
+	<meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" /> 
+   <!-- <link rel="stylesheet" href="fonts/fontello/css/fontello.css" /> -->
+
+   <link href='https://fonts.googleapis.com/css?family=Yantramanav:200' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>if (!window.jQuery) { document.write('<script src="js/jquery-1.12.2.min.js"><\/script>'); }
+</script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+
+</head>
+<body>
+<div id="container">
+<div id="content">
+	<h1 id="logo" onclick="toggleShowPage();">J A R E D<br>B O Y D</h1>
+	<nav>
+		<ul class="fa-ul">
+			<li><a href="#" onclick="transitionTitlePage();showPage('about');"><i  class="fa-li fa fa-male"></i> About Me</a></li>
+			<li><a href="#" onclick="transitionTitlePage();showPage('education');"><i class="fa-li fa fa-university"></i> Education</a></li>
+			<li><a href="https://www.linkedin.com/in/jared-boyd-554475117" target="_blank"><i class="fa-li fa fa-linkedin-square"></i> LinkedIn</a></li>
+			<li><a href="#" onclick="transitionTitlePage();showPage('contact');"><i class="fa-li fa fa-envelope"></i> Contact</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div id="about" class="page" style="display:none">
+<div class="pageContent">
+	<h1>About Me</h1>
+	<p>The about me section</p>	
+</div>
+</div>
+
+<div id="education" class="page" style="display:none">
+<div class="pageContent">
+	<h1>Education</h1>
+	<p>I'm currently a student at the <a href="https://www.ucmo.edu/">University of Cenral Missouri</a> in Warrensburg, Missouri. I'm working on my B.S. in Computer Science, and plan to graduate in the Spring of 2017.</p>
+</div>
+</div>
+
+<div id="contact" class="page" style="display:none">
+<div class="pageContent">
+	<h1>Contact</h1>
+	<p>You could probably email me, or whatever.</p>
+</div>
+</div>
+
+</div>
+</body>
+</html>
