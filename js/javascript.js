@@ -1,21 +1,24 @@
+
 //initialize boolean value of home page
 var titlePage = true;
-var initialTitlePage = true;
 
 //transition from the title page navigation to sidebar navigation
 function transitionTitlePage() {
-	var content = document.getElementById('content');
-	if (titlePage === false) {
-		return;
-	}
-	$(content).animate({width: '250px'});
-	content.style.position='fixed';
-	content.style.borderRight='solid #000000';
+	var navContent = document.getElementById('navContent');
+
+	$(navContent).animate({width: '200px'});
+	navContent.style.position='fixed';
+	navContent.style.borderRight='solid #000000';
 	titlePage = false;
-	initialTitlePage = false;
 }
 
+//Shows the page content when clicked in nav bar
 function showPage(page) {
+	//Transition from title page if not already done
+	if (titlePage === true) {
+		transitionTitlePage();
+	}
+
 	var page = document.getElementById(page);
 	if (!page) {
 		alert("nope");
@@ -28,11 +31,8 @@ function showPage(page) {
 	page.style.display = 'block';
 }
 
+/* Shows title page again when logo is clicked
 function toggleShowPage() {
-	/*var pages = document.getElementsByClassName('page');
-	for(var i = 0; i < pages.length; i++) {
-		pages[i].style.display = 'none';
-	}*/
 	if (initialTitlePage === true) {
 		return;
 	}
@@ -44,4 +44,6 @@ function toggleShowPage() {
 	} else {
 		transitionTitlePage();
 	}
+
 }
+*/

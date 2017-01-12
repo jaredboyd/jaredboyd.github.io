@@ -11,9 +11,6 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" /> 
-   <!-- <link rel="stylesheet" href="fonts/fontello/css/fontello.css" /> -->
-
-   <link href='https://fonts.googleapis.com/css?family=Yantramanav:200' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="js/jquery-1.12.2.min.js"><\/script>'); }
@@ -23,14 +20,14 @@
 </head>
 <body>
 <div id="container">
-<div id="content">
-	<h1 id="logo" onclick="toggleShowPage();">J A R E D<br>B O Y D</h1>
+<div id="navContent">
+	<h1 id="logo">J A R E D<br>B O Y D</h1>
 	<nav>
 		<ul class="fa-ul">
-			<li><a href="#" onclick="transitionTitlePage();showPage('about');"><i  class="fa-li fa fa-male"></i> About Me</a></li>
-			<li><a href="#" onclick="transitionTitlePage();showPage('education');"><i class="fa-li fa fa-university"></i> Education</a></li>
-			<li><a href="https://www.linkedin.com/in/jared-boyd-554475117" target="_blank"><i class="fa-li fa fa-linkedin-square"></i> LinkedIn</a></li>
-			<li><a href="#" onclick="transitionTitlePage();showPage('contact');"><i class="fa-li fa fa-envelope"></i> Contact</a></li>
+			<li><a href="#" onclick="showPage('about');"><i  class="fa-li fa fa-male"></i> About Me</a></li>
+			<li><a href="#" onclick="showPage('education');"><i class="fa-li fa fa-university"></i> Education</a></li>
+			<li><a href="#" onclick="showPage('projects');"><i class="fa-li fa fa-gears"></i> Projects</a></li>
+			<li><a href="#" onclick="showPage('contact');"><i class="fa-li fa fa-envelope"></i> Contact</a></li>
 		</ul>
 	</nav>
 </div>
@@ -38,21 +35,41 @@
 <div id="about" class="page" style="display:none">
 <div class="pageContent">
 	<h1>About Me</h1>
-	<p>The about me section</p>	
+	<div id="about-picture">
+		<img src="images/aboutme.jpg">
+	</div>
+	<p>My name is Jared Boyd. I am a senior computer science student and have an interest in web development. I am mostly self taught, but am excited to be currently taking a class on server side web programming as well. 
+	</br></br>When I'm not behind a computer screen, I enjoy riding mountain bike trails, and playing music. My lastest project is a ukulele punk rock cover band.
+	</br></br>I am currently looking for summer internship employment opportunities.</p>	
 </div>
 </div>
 
 <div id="education" class="page" style="display:none">
 <div class="pageContent">
 	<h1>Education</h1>
-	<p>I'm currently a student at the <a href="https://www.ucmo.edu/">University of Cenral Missouri</a> in Warrensburg, Missouri. I'm working on my B.S. in Computer Science, and plan to graduate in the Spring of 2017.</p>
+	<p>I am a student at the <a href="https://www.ucmo.edu/">University of Central Missouri</a> in Warrensburg, Missouri. I'm working towards a B.S. in Computer Science, and plan to graduate in the Spring of 2017.</p>
+	<img src="images/ucm_logo.jpg">
+</div>
+</div>
+
+<div id="projects" class="page" style="display:none">
+<div class="pageContent">
+	<h1>Projects</h1>
+		<h3>Tic-Tac-Toe</h3>
+		<p><a href="tictactoe/TicTacToe.html" target="_blank">Play the game</a></p>
+		<p><a href="https://github.com/jaredboyd/TicTacToe" target="_blank">Check out the source code on github</a></p>
+		<h3>Personal Website</h3>
+		<p><a href="https://github.com/jaredboyd/jaredboyd.github.io" target="_blank">Check out the source code on github</a></p>
 </div>
 </div>
 
 <div id="contact" class="page" style="display:none">
 <div class="pageContent">
 	<h1>Contact</h1>
-	<p>You could probably email me, or whatever.</p>
+	<p style="padding-top: 10px"><a href="https://github.com/jaredboyd" target="_blank"><i class="fa fa-github fa-2x"></i> Github</a></p>
+	<p><a href="https://www.linkedin.com/in/jared-boyd-554475117" target="_blank"><i class="fa fa-linkedin fa-2x"></i> LinkedIn</a></p>
+	<p><a href="https://twitter.com/JaredRBoyd" target="_blank"><i class="fa fa-twitter fa-2x"></i> Twitter</a></p>
+	<p><a href="mailto:jaredrichardboyd@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i> Email</a></p>
 </div>
 </div>
 
